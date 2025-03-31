@@ -22,7 +22,7 @@
                     <div class="flex items-center px-4 py-4 sm:px-6">
                         <div class="min-w-0 flex-1 flex items-center">
                             <div class="flex-shrink-0 text-center w-fit text-gray-500 text-sm">
-                                {{ $expense->date }}
+                                {{ $expense->spent_at }}
                             </div>
                             <div class="min-w-0 flex-1 px-4 md:grid md:grid-cols-3 md:gap-4">
                                 <div class="font-medium">

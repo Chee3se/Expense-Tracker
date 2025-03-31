@@ -32,7 +32,7 @@ class ExpenseController
     public function store(Request $request)
     {
         $request->validate([
-            'date' => 'required|date',
+            'spent_at' => 'required|datetime',
             'amount' => 'required|numeric',
             'category_id' => 'required|exists:categories,id',
             'notes' => 'nullable|string',
@@ -66,7 +66,7 @@ class ExpenseController
     public function update(Request $request, Expense $expense)
     {
         $request->validate([
-            'date' => 'required|date',
+            'spent_at' => 'required|datetime',
             'amount' => 'required|numeric',
             'category_id' => 'required|exists:categories,id',
             'notes' => 'nullable|string',

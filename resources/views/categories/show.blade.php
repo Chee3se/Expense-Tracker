@@ -29,7 +29,7 @@
             @forelse($category->expenses as $expense)
                 <div class="flex flex-row p-3 items-center">
                     <div class="flex-grow flex gap-4">
-                        <span class="text-gray-600 w-24">{{ $expense->date }}</span>
+                        <span class="text-gray-600 w-24">{{ $expense->spent_at }}</span>
                         <span class="font-medium">{{ $expense->amount }}</span>
                         <span class="text-gray-600">{{ $expense->notes }}</span>
                     </div>

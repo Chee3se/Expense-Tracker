@@ -18,7 +18,7 @@ class ExpenseFactory extends Factory
     public function definition(): array
     {
         return [
-            'date' => $this->faker->date(),
+            'spent_at' => $this->faker->dateTime(),
             'amount' => $this->faker->randomFloat(2, 1, 1000),
             'category_id' => Category::pluck('id')->random(),
             'notes' => $this->faker->sentence()

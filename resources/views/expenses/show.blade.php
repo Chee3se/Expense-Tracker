@@ -8,8 +8,8 @@
 
     <div class="mx-auto mt-6 max-w-md flex flex-col gap-4">
         <div class="flex flex-col">
-            <label for="date" class="text-lg">Date</label>
-            <input type="date" name="date" id="date" class="border border-gray-200 rounded-lg p-2 focus:outline-none focus:ring focus:border-blue-300" value="{{ $expense->date }}" readonly>
+            <label for="spent_at" class="text-lg">Date</label>
+            <input type="datetime-local" name="spent_at" id="spent_at" class="border border-gray-200 rounded-lg p-2 focus:outline-none focus:ring focus:border-blue-300" value="{{ $expense->date }}" readonly>
         </div>
         <div class="flex flex-col">
             <label for="amount" class="text-lg">Amount</label>
