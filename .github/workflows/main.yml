@@ -39,5 +39,7 @@ jobs:
           username: ${{ secrets.CPANEL_USERNAME }}
           password: ${{ secrets.CPANEL_PASSWORD }}
           exclude: |
+            **/.git/**
+            **/.github/**
             **/node_modules/**
             **/vendor/**
